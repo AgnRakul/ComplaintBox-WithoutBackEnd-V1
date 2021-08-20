@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="customJS.js"></script>
+    <link rel="stylesheet" href="assets/css/show.css">
+    <title>Complaint-View</title>
+</head>
+
+<body>
+
+    <button type="button" class="btn btn-primary">Report</button>
+
+    <div class="modal scroll">
+
+
+        <h1 id="Title" class="Title">I'm a modal window 😍</h1>
+        <p id="Message" class="Message text-muted text-truncate">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        </p>
+
+        <section id="app">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="comment">
+                            <p v-for="items in item" v-text="items"></p>
+                        </div>
+                        <!--End Comment-->
+                    </div>
+                    <!--End col -->
+                </div><!-- End row -->
+                <div class="row">
+                    <div class="col-6">
+                        <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem"
+                            @keyup.enter="addItem()"></textarea>
+                        <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                            Comment</button>
+                    </div><!-- End col -->
+                </div>
+                <!--End Row -->
+            </div>
+            <!--End Container -->
+        </section><!-- end App -->
+    </div>
+
+</body>
+
+</html>

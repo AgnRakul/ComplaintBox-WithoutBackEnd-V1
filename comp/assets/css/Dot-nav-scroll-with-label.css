@@ -1,0 +1,44 @@
+#dot-nav {
+  right: 10px;
+  top: 50%;
+  margin-top: -50px;
+  height: 100px;
+  z-index: 999;
+  position: fixed;
+}
+
+#dot-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#dot-nav li {
+  position: relative;
+  background-color: #bdc3c7;
+  border: 3px solid #bdc3c7;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+  padding: 5px;
+  height: 10px;
+  margin: 10px 10px 0px 0px;
+  width: 10px;
+  vertical-align: bottom;
+}
+
+#dot-nav li.active, #dot-nav li:hover {
+  background-color: #8e44ad;
+}
+
+#dot-nav a {
+  outline: 0;
+  vertical-align: top;
+  margin: 0px 0px 0px 25px;
+  position: relative;
+  top: -5px;
+}
+
+section {
+  min-height: 50vh;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Complaint Portal</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="read.js"></script>
+</head>
+
+<body>
+
+  <div class="contact-clean">
+    <h3 class="PageTitle">Complaint Portal</h3>
+    <form method="get" action="http://localhost:1310/submit">
+
+      <h2 class="text-center">Complaint Box</h2>
+      <div class="form-group">
+        <input class="form-control" type="text" minLength="20" name="title" placeholder="Title" id="title" required />
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="text" placeholder="Message" minLength="100" rows="14" id="text"
+          required></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+
+  </div>
+  <div class="container-center scroll">
+
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="customJS.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
