@@ -35,7 +35,7 @@ function myFunction(t, m, id) {
 
   let btncard = document.createElement('a');
   btncard.className = "ReadMore";
-  btncard.setAttribute('href', "http://127.0.0.1:5500/comp/show.html?Cid=" + id);
+  btncard.setAttribute('href', "http://127.0.0.1:5500/show.html?Cid=" + id);
   btncard.id = "ReadMore";
   btncard.innerText = "View"
   card.appendChild(btncard);
